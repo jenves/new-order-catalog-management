@@ -12,6 +12,7 @@ Sistema abrangente projetado para gerenciar ordens, produtos/serviços e itens d
 - [**Maven**](https://maven.apache.org/download.cgi)
 - [**Spring Boot 3**](https://spring.io/projects/spring-boot)
 - [**Docker**](https://www.docker.com/products/docker-desktop/) - Para gerenciamento de banco de dados
+- Flyway - Para migração de banco de dados
 
 ## Estrutura do Projeto
 
