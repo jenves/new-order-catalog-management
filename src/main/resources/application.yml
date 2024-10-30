@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  servlet:
+    context-path: '/order-catalog-management/'
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/order-catalog-management
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+  flyway:
+    enabled: true
+    validate-on-migrate: false
+    url: ${spring.datasource.url}
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+    baselineVersion: 1
+    baseline-on-migrate: true
+    locations: classpath:/db/migration
+  application:
+    name: order-catalog-management
